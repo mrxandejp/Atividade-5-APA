@@ -40,10 +40,6 @@ int main(){
 		adj[v1].push_back(v2);	
 	}
  
- 
- 
- 
- 
 	estimativa[inicio] = 0;
 	index.push_back(inicio);
  

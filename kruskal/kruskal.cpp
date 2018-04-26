@@ -3,9 +3,7 @@
  
 #define fori(i, b, n) for(int i = b; i<n; ++i)
 
-
 using namespace std;
- 
  
 struct aresta{
     int v1;
@@ -18,18 +16,9 @@ void unir(int v1, int v2);
 int pai(int x);				
 void countSort( aresta *A, int tamanhoVetor );	
  
- 
-  
- 
- 
- 
- 
 void unir(int v1, int v2){
     ciclo[pai(v1)] = pai(v2);
-}
- 
- 
- 
+} 
  
 int pai(int v){
  
@@ -41,9 +30,6 @@ int pai(int v){
  
     return ciclo[v];
 }
- 
- 
- 
  
 void countSort( aresta *A, int tamanhoVetor ){
 	stack<aresta> peso[101]; 
@@ -66,9 +52,6 @@ void countSort( aresta *A, int tamanhoVetor ){
  
  
 }
-
- 
- 
  
 int main (){
  
